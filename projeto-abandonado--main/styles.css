@@ -1,0 +1,331 @@
+/* ============Geral COLOCAR DEPOIS TRES CORES PRINCIPAIS PARA O SITE=============*/
+
+:root {
+  --color-black: #000000;
+  --green: #49AA26;
+  --red: red; /* COLOCAR A V(GREEN)| UM PONTO IMPORTANTE A SER DITO E A RESPEITO DO ROOT EM QUE COLOCA AS CORES 
+  PRINCIPAIS PARA O SITE, ADIANTA E COLOCAR AQUI*/
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+   font-size: 97.76%;
+}
+
+body {
+    background: #FFFF;
+  font-family:'Noto Sans JP', sans-serif;
+}
+
+.container {
+ width: min(90vw, 800px); /* VW = Viewport Width*/
+
+ margin: auto;
+}
+
+/* ==========head/topo===========*/
+header {
+  background: #4b4806;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 600 ;
+
+}
+/* ==========butões e links===*/
+ a {
+   color: #0bbb05;
+ text-decoration: none;
+ }
+
+ a:hover {
+   color:#ad0c0c;
+ }
+
+
+button{
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  color:  white;
+  background-color: #0bbb05;
+  
+  padding: 0;
+  border-radius: 0.25rem;
+  cursor: center;
+}
+
+button:hover {
+  background-color: #054903;
+
+}
+
+ .button.new {  /* Butão da transação*/
+  display: inline-block;
+  margin-bottom: .8rem;
+
+}
+
+.button.cancel{
+ color: red;
+ border: 2px var(--red) solid;
+ border-radius: 0.25rem;
+ 
+ height: 50px;
+ width: 100px;
+ 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ opacity: 0.6 rem;
+}
+
+.button.cancel:hover {
+  background-color: rgb(53, 4, 4);
+  opacity: 1;
+}
+
+
+
+/*=== Balanço ======*/
+#Balance { 
+  margin-top: -1rem;
+  
+}
+#Balance h2 {
+ color: #C5C13B;
+ margin-top: 2rem;
+}
+
+
+
+/*====== Transações ==========*/
+h2 {
+margin-top: 3.2rem;
+margin-bottom: 0.8rem;
+color: var(--color-black);
+
+}
+
+.sr-only {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ padding: 0;
+ margin: -1px;
+ overflow: hidden;
+ clip: rect(0, 0, 0);
+ white-space: nowrap;
+ border-width: 0; 
+}
+
+
+
+ /* =======cartões/bordas============*/
+  .cartao {
+    background: #0bbb05;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+
+    margin-bottom: 2rem;
+    
+    color: var(--color-black)
+  }
+
+  .cartao h3 {
+          font-weight: normal;
+          font-size: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  }
+
+  .cartao p {
+       font-size: 2rem;
+       line-height: 3rem;
+
+       margin-top: 1rem;
+  }
+
+  .cartao.total {
+    background: #0bbb05;
+    color: white;
+  }
+
+  .cartao.saida {
+    background: rgb(253, 253, 0);
+    
+  }
+/* Table/Tabela */
+#data-table{
+    
+          width: 100%;
+           border-spacing: 0 0.5rem;
+              color: #0c227c; /* Essa cor serve paraa tabela ! Não alterar a cor !*/
+    
+}
+
+#transaction {
+  display: block;
+  border-spacing: 0 0.5rem;
+  color: #969cb3;
+
+  overflow-x: auto;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+    border-radius: 0 0.25rem  0.25rem 0;
+}
+
+
+table tbody tr {
+  opacity: 0.7;
+}
+
+table tbody tr:hover {
+  opacity: 0.1;
+}
+
+table thead th{
+  background: rgb(6, 170, 224);
+  
+   font-weight: normal;
+   padding: 1rem 2rem;
+   text-align: left;
+}
+
+table tbody td{
+  background: lightblue;
+
+  padding: 1rem 2rem;
+  font-weight: normal;
+  
+}
+
+td.description {
+  color: var(--color-black);
+}
+
+td.spent {
+color: red;
+}
+
+td.receive{
+  color: rgb(12, 236, 12);
+}
+
+/* =========DIVISÃO/Modal===========*/
+  .modal-overlay {
+    width: 100%;
+    height: 100%; 
+
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+  .modal {
+     background: #f0f2f5;
+     padding: 2.4rem;
+     
+     position: relative;
+     z-index: 1;
+    
+}
+
+/* ======Form/ formulario=======*/
+
+#form {
+  max-width: 500px;
+}
+
+#form h2 {
+  margin-top: 0;
+}
+
+input {
+  border: none; 
+   border-radius: 0.2rem;
+  
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.input-group {
+  margin-top: 0.8rem;
+}
+
+.input-group small {
+  opacity: 0.4rem;
+}
+
+.input-group.actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group.actions.button,
+.input-group.actions button{
+  width: 48%;
+}
+
+/* =========footer ===========*/
+footer {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  color: var(--color-black);
+
+  opacity: 0.6;
+}
+
+/*=======responsive====*/
+
+@media (min-width: 800px) {
+   
+  html{
+     font-size: 87.5%;
+   }
+  
+   #Balance {
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

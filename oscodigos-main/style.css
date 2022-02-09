@@ -1,0 +1,58 @@
+h1{
+    font-family: Itim;
+  } 
+  .blue-text {
+    color: blue;
+  }
+  .image-less{
+    border-radius: 60px;
+  }
+   .aside {
+    width: 50%;
+    padding-top: 20px;
+     padding-right: 40px;
+     padding-bottom: 20px;
+     padding-left: 40px;
+    margin: 9px 5px 9px 5px;  /* colocar o code das posições: top, right, bottom, left; */
+    float: top;
+    font-style: Inconsolata;
+    background-color: lightblue;
+  }
+.mark{
+  background-color: MediumTurquoise	;
+  width: 180px;
+    
+
+}
+.mark-2{
+  background-color: #FFB90F;
+  width: 440px;
+  opacity: 0.9;
+}
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 10px;
+  margin: 9px;
+margin: left;
+  width: 300px;
+}
+
+.beau{
+  font-family: 'Langar', cursive;
+  
+}
+
+ .bloco {
+  background-color: gray;
+  border: 1px solid #999;
+  display: block;
+  padding: 10px;
+  margin: 9px;
+margin: left;
+  width: 300px;
+
+}
+
+/*  Width and height is like height x width x lenght. When you are calculat an object three-dimensional.*/
